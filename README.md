@@ -19,3 +19,9 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 ## Chapter 2 Day 1
 1  ![Screenshot_2022-06-08 Try out this Playground project](https://user-images.githubusercontent.com/90950005/172719740-6304bcdf-05fa-449b-8423-b92dfe19ffbc.png)
 2. ![Screenshot_2022-06-08 Try out this Playground project(1)](https://user-images.githubusercontent.com/90950005/172719767-424b098b-502a-4a36-adbb-6fa13aa65394.png)
+
+## Chapter 2 Day 2
+1. changeGreeting wouldn't be called in a script because a script is just a way to view the data without actually changing the smart contract.  Like a "Read Only" permission on a google doc I believe.
+2. AuthAccount basically means the account owner is authorizing access to their account for the transaction to take place.  It's asking for and getting permission to access an account.
+3. Prepare allows access to an account or set of data.  Execute actualy changes the data on the blockchain.
+4. 
