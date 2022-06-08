@@ -18,4 +18,5 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 
 ## Chapter 2 Day 1
 ![Screenshot_2022-06-08 Try out this Playground project](https://user-images.githubusercontent.com/90950005/172719740-6304bcdf-05fa-449b-8423-b92dfe19ffbc.png)
+
 ![Screenshot_2022-06-08 Try out this Playground project(1)](https://user-images.githubusercontent.com/90950005/172719767-424b098b-502a-4a36-adbb-6fa13aa65394.png)
