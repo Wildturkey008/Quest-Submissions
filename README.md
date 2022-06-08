@@ -17,6 +17,5 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 2. The pillars are important because they speak to people who may not be familiar or experienced in this space.  Coding or learning about blockchains can be itimidating for many.  By building something that has pillars focused on secrutiy, safety, and approachability it appears less intimidating to people like me with no history in coding.  Transparency and a good user experience for developers are something that are appealing to people looking to get involved.
 
 ## Chapter 2 Day 1
-### 1:![Screenshot_2022-06-08 Try out this Playground project](https://user-images.githubusercontent.com/90950005/172719740-6304bcdf-05fa-449b-8423-b92dfe19ffbc.png)
-
-### 2. ![Screenshot_2022-06-08 Try out this Playground project(1)](https://user-images.githubusercontent.com/90950005/172719767-424b098b-502a-4a36-adbb-6fa13aa65394.png)
+1  ![Screenshot_2022-06-08 Try out this Playground project](https://user-images.githubusercontent.com/90950005/172719740-6304bcdf-05fa-449b-8423-b92dfe19ffbc.png)
+2. ![Screenshot_2022-06-08 Try out this Playground project(1)](https://user-images.githubusercontent.com/90950005/172719767-424b098b-502a-4a36-adbb-6fa13aa65394.png)
