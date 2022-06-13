@@ -36,9 +36,10 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 
 2. <img width="927" alt="Screen Shot 2022-06-12 at 7 36 54 PM" src="https://user-images.githubusercontent.com/90950005/173260433-851f0666-8aeb-4f2e-8aee-211832b0831a.png">
 
-3.  ```cadence
 
-   pub fun main() {
+3.
+```cadence
+pub fun main() {
 
 var myAccount: Int? = 8
 var unwrappedmyAccount: Int = myAccount!
@@ -47,3 +48,5 @@ var myAccount2: Int? = nil
 var unwrappedmyAccount2 : Int = myAccount2!
 }
 ```
+Force unwrap in the second example above would cause panic in the system because the return value would be nil.  Not sure if I am understanding this correctly.  One would want to return optionals in order to deal with any values that came back as nil.  The dev can then see if the nil option is ok, needs to be modified, or was an error they missed.  If they force unwrapped and there was a nil value where there shouldn't be, the program would have errors, not work properly, and possibly shut down.  Then the dev would have to figure out where that nil value is.  Is that sort of right?
+
