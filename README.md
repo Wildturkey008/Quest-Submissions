@@ -50,3 +50,16 @@ var unwrappedmyAccount2 : Int = myAccount2!
 ```
 Force unwrap in the second example above would cause panic in the system because the return value would be nil.  Not sure if I am understanding this correctly.  One would want to return optionals in order to deal with any values that came back as nil.  The dev can then see if the nil option is ok, needs to be modified, or was an error they missed.  If they force unwrapped and there was a nil value where there shouldn't be, the program would have errors, not work properly, and possibly shut down.  Then the dev would have to figure out where that nil value is.  Is that sort of right?
 
+4. The error is occuring because it's a mismatch of the return type from the declared type.  Dictionary returns optionals.  The first line of the code has String which gives the error.  A couple ways of fixing this scenario.
+```cadence
+pub fun main(): String {
+  let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
+  return thing[0x03]!
+}
+```
+```cadence
+pub fun main(): String? {
+  let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
+  return thing[0x03]
+}
+```
