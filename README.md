@@ -31,3 +31,18 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 
 ![Screenshot_2022-06-08 Try out this Playground project(4)](https://user-images.githubusercontent.com/90950005/172736882-dfefe2d0-c289-41de-b2ba-5923783cb4c0.png)
 
+## Chapter 2 Day 3
+1. <img width="1135" alt="Screen Shot 2022-06-12 at 7 29 07 PM" src="https://user-images.githubusercontent.com/90950005/173260121-c53d59e0-e1de-4499-aadd-4536ee819d5f.png">
+
+2. <img width="927" alt="Screen Shot 2022-06-12 at 7 36 54 PM" src="https://user-images.githubusercontent.com/90950005/173260433-851f0666-8aeb-4f2e-8aee-211832b0831a.png">
+
+3.```cadence
+   pub fun main() {
+
+var myAccount: Int? = 8
+var unwrappedmyAccount: Int = myAccount!
+
+var myAccount2: Int? = nil
+var unwrappedmyAccount2 : Int = myAccount2!
+}
+```
