@@ -36,7 +36,8 @@ A transaction is a function that changes the data on the blockchain.  It is usua
 
 2. <img width="927" alt="Screen Shot 2022-06-12 at 7 36 54 PM" src="https://user-images.githubusercontent.com/90950005/173260433-851f0666-8aeb-4f2e-8aee-211832b0831a.png">
 
-3.```cadence
+3.  ```cadence
+
    pub fun main() {
 
 var myAccount: Int? = 8
