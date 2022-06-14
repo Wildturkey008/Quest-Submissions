@@ -63,3 +63,32 @@ pub fun main(): String? {
   return thing[0x03]
 }
 ```
+## Chapter 2 Day 4
+```cadence
+pub contract FlovatarDB {
+    pub var flovatars: {Address: Flovatar}
+
+    pub struct Flovatar{
+        pub let name: String
+        pub let side: String
+        pub let club: String
+        pub let mint: Int
+
+        init(_name: String, _side: String, _club: String, _mint: Int) {
+        self.name = _name
+        self.side = _side
+        self.club = _club
+        self.mint = _mint
+    }
+}
+
+pub fun addFlovatar(name: String, side: String, club: String, mint: Int) {
+    let newFlovatar = Flovatar(_name: name, _side: side, _club: club, _mint: mint)
+    self.flovatars[account] = newFlovatar
+}
+
+init() {
+    self.flovatars = {}
+    }
+}
+```
