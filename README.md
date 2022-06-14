@@ -72,18 +72,18 @@ pub contract FlovatarDB {
         pub let name: String
         pub let side: String
         pub let club: String
-        pub let mint: Int
+        pub let account: Address
 
-        init(_name: String, _side: String, _club: String, _mint: Int) {
+        init(_name: String, _side: String, _club: String, _account: Address) {
         self.name = _name
         self.side = _side
         self.club = _club
-        self.mint = _mint
+        self.account = _account
     }
 }
 
-pub fun addFlovatar(name: String, side: String, club: String, mint: Int) {
-    let newFlovatar = Flovatar(_name: name, _side: side, _club: club, _mint: mint)
+pub fun addFlovatar(name: String, side: String, club: String, account: Address) {
+    let newFlovatar = Flovatar(_name: name, _side: side, _club: club, _account: account)
     self.flovatars[account] = newFlovatar
 }
 
