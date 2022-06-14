@@ -106,3 +106,12 @@ transaction(name: String, side: String, club: String, account: Address) {
   }
 }
 ```
+//Script
+```cadence
+import FlovatarDB from 0x01
+
+pub fun main(account: Address): FlovatarDB.Flovatar {
+    return FlovatarDB.flovatars[account]!
+
+}
+```
