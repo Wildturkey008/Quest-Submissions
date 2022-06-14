@@ -92,3 +92,17 @@ init() {
     }
 }
 ```
+//Transaction
+```cadence
+import FlovatarDB from 0x01
+
+transaction(name: String, side: String, club: String, account: Address) {
+
+  prepare(signer: AuthAccount) {}
+
+  execute {
+    FlovatarDB.addFlovatar(name: name, side: side, club: club, account: account)
+    log("We're done")
+  }
+}
+```
