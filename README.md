@@ -115,3 +115,19 @@ pub fun main(account: Address): FlovatarDB.Flovatar {
 
 }
 ```
+
+## Chapter 3 Day 1
+1. Structs and Resources are different because resources cannot be copied, lost, or created whenever you want.  They tend to be more difficult to deal with than structs but also more beneficial and secure.
+
+2. A resource is better to use than struct when you are dealing with something that's valuable or critical to the contract.  Since resources are impossibele to lose unless you actually write "destroy", it is much better to use them when dealing with something like a valuable NFT.
+
+3. In order to make a new resource, you must use the key word "create"
+
+4. No, resources cannot be created in a script or transaction.  It has to be within the contract.  
+
+5. The resource is @Jacob
+
+6. The 4 errors are: 
+  - You need an @ symbol in front of the resource.  Should be @Jacob
+  - Replace the = with <- symbol and add the @ in front of Jacob
+  - Add <- symbol after return
