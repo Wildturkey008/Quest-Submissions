@@ -136,6 +136,7 @@ pub fun main(account: Address): FlovatarDB.Flovatar {
 ```cadence
 pub contract Whiskey {
 
+    pub var dictionaryOfBrands: @{String: Brand}
     pub var arrayOfBrands: @[Brand]
 
     pub resource Brand {
@@ -144,14 +145,22 @@ pub contract Whiskey {
         self.message = "wildTurkey"
         }
     }
+    init() {
+    self.arrayOfBrands <-[]
+    self.dictionaryOfBrands <- {}
+    }
+    //Array Funtions
     pub fun addBrand(Brand: @Brand) {
         self.arrayOfBrands.append(<-Brand)
     }
     pub fun removeBrand(Index: Int): @Brand {
         return<-self.arrayOfBrands.remove(at: Index)
     }
-    init() {
-    self.arrayOfBrands <-[]
-    }  
+    //Dictionary Functions
+    pub fun addToDictionary(String: @Brand) {
+        self.dictionaryOfBrands[String.message] <-! Brand
+    }
+
+   
 }
 ```
