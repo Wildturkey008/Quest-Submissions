@@ -131,3 +131,27 @@ pub fun main(account: Address): FlovatarDB.Flovatar {
   - You need an @ symbol in front of the resource.  Should be @Jacob
   - Replace the = with <- symbol and add the @ in front of Jacob
   - Add <- symbol after return
+
+## Chapter 3 Day 2
+```cadence
+pub contract Whiskey {
+
+    pub var arrayOfBrands: @[Brand]
+
+    pub resource Brand {
+        pub let message: String
+        init () {
+        self.message = "wildTurkey"
+        }
+    }
+    pub fun addBrand(Brand: @Brand) {
+        self.arrayOfBrands.append(<-Brand)
+    }
+    pub fun removeBrand(Index: Int): @Brand {
+        return<-self.arrayOfBrands.remove(at: Index)
+    }
+    init() {
+    self.arrayOfBrands <-[]
+    }  
+}
+```
