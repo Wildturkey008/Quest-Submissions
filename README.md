@@ -158,9 +158,12 @@ pub contract Whiskey {
     }
     //Dictionary Functions
     pub fun addToDictionary(String: @Brand) {
-        self.dictionaryOfBrands[String.message] <-! Brand
+        self.dictionaryOfBrands[String.message] <-! String
     }
+    pub fun removeDictBrand(key: String): @Brand {
+        let Brand <- self.dictionaryOfBrands.remove(key: key) ?? panic("Could not find brand!")
+        return <- Brand
+    } 
 
-   
-}
-```
+   }
+   ```
