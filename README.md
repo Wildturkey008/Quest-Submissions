@@ -171,7 +171,7 @@ pub contract Whiskey {
 ```cadence
 pub contract Whiskey {
 
-    pub var dictionaryOfBrands: @{String: Brand}
+    pub var dictionaryOfBrands: @{String: Bottle}
     
     pub resource Bottle {
         pub let description: String
@@ -181,13 +181,13 @@ pub contract Whiskey {
     }
 
     pub fun getReference(key: String): &Bottle {
-    return (&self.dictionaryOfBrands[brand] as &Bottle?)!
+    return (&self.dictionaryOfBrands[key] as &Bottle?)!
     }
 
     init() {
         self.dictionaryOfBrands <- {
-        "WildTurkey": <- create Bottle(_description: "TheOG")
-        "JackD": <- create Bottle(_description: "DontDrink")
+        "WildTurkey": <- create Bottle(_description: "TheOG"),
+        "JackD": <- create Bottle(_description: "DontDrink"),
         "Pappy23": <- create Bottle(_description: "TheDream")
         }
 
