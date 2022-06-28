@@ -167,3 +167,31 @@ pub contract Whiskey {
 
    }
    ```
+## Chapter 3 Day 3
+```cadence
+pub contract Whiskey {
+
+    pub var dictionaryOfBrands: @{String: Brand}
+    
+    pub resource Bottle {
+        pub let description: String
+        init (_description: String) {
+        self.description = _description
+        }
+    }
+
+    pub fun getReference(key: String): &Bottle {
+    return (&self.dictionaryOfBrands[brand] as &Bottle?)!
+    }
+
+    init() {
+        self.dictionaryOfBrands <- {
+        "WildTurkey": <- create Bottle(_description: "TheOG")
+        "JackD": <- create Bottle(_description: "DontDrink")
+        "Pappy23": <- create Bottle(_description: "TheDream")
+        }
+
+    }
+   
+}
+```
